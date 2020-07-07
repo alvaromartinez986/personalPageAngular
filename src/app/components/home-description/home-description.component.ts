@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-header-showcase',
-  templateUrl: './header-showcase.component.html',
+  selector: 'app-home-description',
+  templateUrl: './home-description.component.html',
 })
-export class HeaderShowcaseComponent implements OnInit {
+export class HomeDescriptionComponent implements OnInit {
 
   backgroundImage: String = "assets/img/alvaro1.png";
 

@@ -4,15 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { HeaderShowcaseComponent } from './components/header-showcase/header-showcase.component';
+import { HomeDescriptionComponent } from './components/home-description/home-description.component';
 import { SpecializeComponent } from './components/specialize/specialize.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderContentComponent } from './components/header-content/header-content.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutSectionComponent } from './components/about-section/about-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    HeaderShowcaseComponent,
-    SpecializeComponent
+    HomeDescriptionComponent,
+    SpecializeComponent,
+    FooterComponent,
+    HeaderContentComponent,
+    HomeComponent,
+    AboutSectionComponent,
   ],
   imports: [
     BrowserModule,

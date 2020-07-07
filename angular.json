@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "personalPageAngular"
+    }
+  },
+  "defaultProject": "personalPageAngular",
+  "cli": {
+    "analytics": false
+  }
 }
