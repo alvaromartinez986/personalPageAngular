@@ -8,8 +8,8 @@
     color: set-text-color($dark-color);
   }
   &-light {
-    background: $light-color;
-    color: set-text-color($light-color);
+    background: $medium-color;
+    color: set-text-color($medium-color);
   }
   &-medium {
     background: $medium-color;
@@ -45,6 +45,23 @@
   }
 }
 
+//Padding 
+.py{
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+//Margin
 .my{
   &-1 {
     margin: 1rem 0;
@@ -96,4 +113,8 @@
 .lead {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
 }

@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutSectionComponent implements OnInit {
 
-  constructor() { }
+  imgAbout : string; 
+
+  constructor() {
+    this.imgAbout = "assets/img/alvaro2.png";
+  }
 
   ngOnInit() {
   }

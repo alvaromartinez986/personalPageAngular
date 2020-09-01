@@ -10,6 +10,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderContentComponent } from './components/header-content/header-content.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
+import { TechnicalSkillsComponent } from './components/technical-skills/technical-skills.component';
+import { AboutComponent } from './components/about/about.component';
+import { TimeLineComponent } from './components/time-line/time-line.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { AboutSectionComponent } from './components/about-section/about-section.
     HeaderContentComponent,
     HomeComponent,
     AboutSectionComponent,
+    TechnicalSkillsComponent,
+    AboutComponent,
+    TimeLineComponent,
   ],
   imports: [
     BrowserModule,

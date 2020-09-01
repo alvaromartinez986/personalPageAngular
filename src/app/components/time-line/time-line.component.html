@@ -1,0 +1,29 @@
+<div class="my-3">
+  <h2 class="section-title">Work experience</h2>
+  <div class="bottom-line"></div>
+  <div class="time-line">
+    <div [ngClass]="{active: flagChange}" class = "time-line-content">
+      <h2>
+        {{projects[projectActiveIndex].date}}
+      </h2>
+      <h4 class="timeline-title">
+        {{projects[projectActiveIndex].title}}
+      </h4>
+      <p class="timeline-description">
+        {{projects[projectActiveIndex].description}}
+      </p>
+      <p class="timeline-technologies">
+        {{projects[projectActiveIndex].technologies}}
+      </p>
+    </div>
+    <div class="time-line-year">
+        <div class="swiper-button-prev" (click)="changeProject(-1)">
+        </div>
+        <ul>
+          <li *ngFor="let project of projects, let i = index" [ngClass]="{bullet: i==projectActiveIndex}" id = "project-{{i}}"><span>{{project.date}}</span></li>
+        </ul>
+        <div class="swiper-button-next" (click)="changeProject(1)">
+        </div>
+    </div>
+</div>
+</div>

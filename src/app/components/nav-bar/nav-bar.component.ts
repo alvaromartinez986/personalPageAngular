@@ -14,7 +14,6 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(val=>{
       this.actualSection = this.router.url;
-      console.log(this.actualSection);
     });
   }
 
