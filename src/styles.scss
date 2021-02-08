@@ -3,7 +3,7 @@
 @import 'sass/config';
 @import 'sass/utilities';
 
-// General Styles 
+// General Styles
 * {
   margin: 0;
   padding: 0;
@@ -33,14 +33,14 @@ a {
   justify-content: space-between;
 
   .menu-nav {
-    
+
     a{
       border-bottom: 3px transparent solid;
-  
+
       &:hover{
         border-color: $light-color;
       }
-  
+
       &.current{
         border-color: $main-color;
       }
@@ -76,7 +76,7 @@ a {
   }
 }
 
-//Header Content 
+//Header Content
 .header-content {
   background: $bg-image no-repeat center right / cover;
   height: 100vh;
@@ -91,7 +91,7 @@ a {
     div {
       display: block;
       overflow: hidden;
-  
+
       .side-inital {
         transform: translateY(100%);
         animation: heading 1s forwards ease-in;
@@ -123,8 +123,8 @@ a {
   position: relative;
   font-size: 1.3rem;
   font-weight: 200;
-  line-height: 1.5; 
-  
+  line-height: 1.5;
+
   img {
     height: 55vh;
     width: 55vh;
@@ -196,7 +196,7 @@ a {
     .about-info {
       display: grid;
       text-align: left;
-      grid-template-areas: 
+      grid-template-areas:
       'bioimage bio bio'
       'aw1 aw2 aw3';
       grid-gap: 1.2rem;
@@ -237,9 +237,9 @@ a {
 
     .award-3 {
       grid-area: aw3;
-    }    
+    }
 
-    .award-1 .fas, 
+    .award-1 .fas,
     .award-2 .fas,
     .award-3 .fas {
       color: $main-color;
@@ -248,7 +248,7 @@ a {
   }
 
   &-b {
-    animation: fadein 2s;    
+    animation: fadein 2s;
     color: #fff;
 
     .skills{
@@ -265,7 +265,7 @@ a {
           background: $medium-color;
           border-radius: 5px;
           margin-bottom: 0.6rem;
-    
+
           div {
             animation: scaleanimation 1s;
             height: 100%;
@@ -277,10 +277,10 @@ a {
       .soft-skills{
         margin-top: 3rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         flex: 1;
         padding: 0 5rem;
- 
+
         .soft-mayor {
           display: flex;
           width: 100px;
@@ -295,7 +295,7 @@ a {
             border-radius: 50%;
             width: 90px;
             height: 90px;
-            margin: auto;            
+            margin: auto;
             background-color: $dark-color;
             z-index: 1;
             display: flex;
@@ -303,6 +303,7 @@ a {
 
             p {
               margin: auto;
+              text-align: center;
             }
           }
         }
@@ -341,7 +342,7 @@ a {
     &.active {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        transition: .4s ease;    
+        transition: .4s ease;
     }
 
     h2 {
@@ -351,7 +352,7 @@ a {
     .timeline-title {
       font-weight: 800;
       font-size: 34px;
-    }  
+    }
 
     .timeline-description,
     .timeline-technologies {
@@ -380,7 +381,7 @@ a {
     li{
       margin-top: 2rem;
       margin-left: 1rem;
-      
+
       &.bullet{
         list-style: disc;
       }
@@ -397,8 +398,8 @@ a {
     background-repeat: no-repeat, repeat;
   }
 
-  .swiper-button-prev:hover{ 
-    transform: rotate(90deg) translateX(-3px); 
+  .swiper-button-prev:hover{
+    transform: rotate(90deg) translateX(-3px);
   }
 
   .swiper-button-next {
@@ -407,13 +408,13 @@ a {
       background-repeat: no-repeat, repeat;
   }
 
-  .swiper-button-next:hover { 
-    transform: rotate(90deg) translateX(3px); 
+  .swiper-button-next:hover {
+    transform: rotate(90deg) translateX(3px);
   }
 
 }
 
-//Animations 
+//Animations
 @keyframes heading {
   to{
     transform: translateY(0);

@@ -7,49 +7,48 @@ import { Project } from './project.model';
 })
 export class TimeLineComponent implements OnInit {
 
-  projects : Array<Project>;
+  projects: Array<Project>;
   projectActiveIndex: number;
-  flagChange: boolean; 
+  flagChange: boolean;
 
 
   constructor() {
-    this.projects = [];
+
     this.flagChange = true;
 
-    let project1 = {
-      date : 'April 2015 - April 2016',
+    this.projects = [{
+      date: 'April 2015 - April 2016',
       title: 'Sifi',
       description: 'lorem ipsuim ipsuimipsuimipsuimipsuim',
-      technologies: 'JS, html, Angular '
-    };
-
-    let project2 = {
-      date : 'April 2016 - April 2017',
+      technologies: 'JS, html, Angular ',
+      image: '',
+    }, {
+      date: 'April 2016 - April 2017',
       title: 'Sipais',
       description: 'lorem ipsuim ipsuimipsuimipsuimipsuim',
-      technologies: 'JS, html, Angular '
-    }
+      technologies: 'JS, html, Angular ',
+      image: '',
+    }];
 
-    this.projectActiveIndex = 0; 
-    this.projects.push(project1);
-    this.projects.push(project2);
+    this.projectActiveIndex = 0;
 
-   }
+
+  }
 
   ngOnInit() {
   }
 
-  changeProject(direction: number){
+  changeProject(direction: number) {
     this.flagChange = false;
 
-    setTimeout(()=>{
+    setTimeout(() => {
       this.flagChange = true;
-      let nextIndex = this.projectActiveIndex + direction; 
-      this.projectActiveIndex = ((nextIndex < 0) || (nextIndex == this.projects.length)) ? 
-                                      this.projectActiveIndex:  nextIndex ;   
+      let nextIndex = this.projectActiveIndex + direction;
+      this.projectActiveIndex = ((nextIndex < 0) || (nextIndex == this.projects.length)) ?
+        this.projectActiveIndex : nextIndex;
     }, 900);
 
-                   
+
   }
 
 }
