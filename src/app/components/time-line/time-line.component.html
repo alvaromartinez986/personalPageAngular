@@ -2,15 +2,18 @@
   <h2 class="section-title">Work experience</h2>
   <div class="bottom-line"></div>
   <div class="time-line">
-    <div [ngClass]="{active: flagChange}" [ngStyle]="{}" class="time-line-content">
+    <div [ngClass]="{active: flagChange}" class="time-line-content">
       <h2>
         {{projects[projectActiveIndex].date}}
       </h2>
       <h4 class="timeline-title">
-        {{projects[projectActiveIndex].title}}
+        <i [ngClass]="projects[projectActiveIndex].icon"></i> {{projects[projectActiveIndex].title}}
       </h4>
       <p class="timeline-description">
-        {{projects[projectActiveIndex].description}}
+        Description: {{projects[projectActiveIndex].description}}
+      </p>
+      <p class="timeline-functions">
+        Functions: {{projects[projectActiveIndex].functions}}
       </p>
       <p class="timeline-technologies">
         {{projects[projectActiveIndex].technologies}}

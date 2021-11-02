@@ -2,13 +2,33 @@
   <nav class="main-nav bg-dark">
     <div class="personal-brand">
       <span class="name-brand" href="#">AM</span>
-      <p class="brand"> Developer</p>
+      <p class="brand">Developer</p>
     </div>
     <ul class="menu-nav">
-      <li><a routerLink="/" [ngClass]="{'current': actualSection === '/'}">Home</a></li>
-      <li><a routerLink="/about" [ngClass]="{'current': actualSection === '/about'}">About</a></li>
-      <li><a routerLink="/" [ngClass]="{'current': actualSection === '/'}">Work</a></li>
-      <li><a routerLink="/" [ngClass]="{'current': actualSection === '/'}">Contact</a></li>
+      <li>
+        <a routerLink="/" [ngClass]="{ current: actualSection === '/' }"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/about"
+          [ngClass]="{ current: actualSection === '/about' }"
+          >About</a
+        >
+      </li>
+      <li>
+        <a routerLink="/work" [ngClass]="{ current: actualSection === '/work' }"
+          >Work</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/contact"
+          [ngClass]="{ current: actualSection === '/contact' }"
+          >Contact</a
+        >
+      </li>
     </ul>
   </nav>
 </header>

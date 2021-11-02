@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderContentComponent implements OnInit {
 
-  roles: string[]; 
-  actualRoleIndex: number; 
-  actualRole: string; 
-  isDeleting: boolean; 
-  wait : number; 
+  roles: string[];
+  actualRoleIndex: number;
+  actualRole: string;
+  isDeleting: boolean;
+  wait : number;
 
-  constructor() { 
-    this.roles = ['Front End Developer'];
-    this.actualRoleIndex = 0; 
+  constructor() {
+    this.roles = ['Javascript Developer', 'React Developer', 'Front-end Developer'];
+    this.actualRoleIndex = 0;
     this.actualRole = '';
     this.isDeleting = false;
     this.wait = 300;

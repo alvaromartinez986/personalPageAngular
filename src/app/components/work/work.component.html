@@ -1,0 +1,10 @@
+<section id="work-a" class="text-center py-3">
+  <div class="container">
+    <h2 class="section-title">My Work</h2>
+    <div class="bottom-line"></div>
+    <p class="lead">Check out some of my projects</p>
+    <div class="items">
+      <app-work-item *ngFor="let work of works" [work]="work"></app-work-item>
+    </div>
+  </div>
+</section>
